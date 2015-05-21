@@ -3,9 +3,6 @@ from conscience import Conscience
 from vitals import Vitals
 from util import get_time
 
-def format(l):
-	return ['%.2f' % i for i in l]
-
 class Reaper:
 	def __init__(self, args):
 		self.args = args
