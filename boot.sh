@@ -5,11 +5,11 @@ if [ -z "$PYTHON" ]; then
   PYTHON=python
 fi
 
-DATADIR=${1:-data}
-REAPER=${2:-main.py}
-ARGS='--cl'
+ARG=${1}
+DATADIR=${2:-data}
+REAPER=${3:-main.py}
 
 mkdir $DATADIR 2>/dev/null || :
 cd ${DATADIR}/
 
-exec ${PYTHON} ../lib/${REAPER} ${ARGS}
+exec ${PYTHON} ../lib/${REAPER} ${ARG}
