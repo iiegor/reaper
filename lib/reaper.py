@@ -16,3 +16,6 @@ class Reaper:
 
 	def cl_start(self):
 		print 'cl_start func'
+
+	def slack_start(self):
+		print 'slack_start func'

@@ -11,6 +11,11 @@ if __name__ == '__main__':
 		Command line start
 		"""
 		reaper.cl_start()
+	elif "--slack" in sys.argv:
+		"""
+		Slack integration
+		"""
+		reaper.slack_start()
 	else:
 		print u'The bootstrap argument is not supported.'
 		sys.exit(0)
