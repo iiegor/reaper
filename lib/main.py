@@ -11,6 +11,11 @@ if __name__ == '__main__':
 		Command line start
 		"""
 		reaper.cl_start()
+	elif "--slack" in sys.argv:
+		"""
+		Slack
+		"""
+		reaper.slack_start()
 	elif "--raspberry" in sys.argv:
 		"""
 		Raspberry PI
