@@ -4,8 +4,6 @@ from copy import copy
 
 class Network(object):
     def __init__(self):
-        print u'Initializing network...'
-
         self._events = {}
         self.on = self.register
         self.off = self.unregister

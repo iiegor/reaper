@@ -11,11 +11,11 @@ if __name__ == '__main__':
 		Command line start
 		"""
 		reaper.cl_start()
-	elif "--slack" in sys.argv:
+	elif "--raspberry" in sys.argv:
 		"""
-		Slack integration
+		Raspberry PI
 		"""
-		reaper.slack_start()
+		reaper.rpi_start()
 	else:
 		print u'The bootstrap argument is not supported.'
 		sys.exit(0)
