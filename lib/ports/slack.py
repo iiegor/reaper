@@ -2,9 +2,10 @@ from slackclient import SlackClient
 from time import time, sleep
 
 class Slack:
-	def __init__(self, token):
+	def __init__(self, token, emitter):
 		self._slack = SlackClient(token)
 		self.last_ping = 0
+		self.emitter = emitter
 
 	def connect(self):
 		self._slack.rtm_connect()
@@ -27,7 +28,8 @@ class Slack:
 
 	def _input(self, data):
 		if "type" in data:
-			print data['type']
+			if "message" == data['type']:
+				self.emitter.emit('on_message', data)
 
 	def getInstance(self):
 		return self._slack
