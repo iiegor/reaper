@@ -1,2 +1,2 @@
 # reaper
-> Artificial Intelligence Development
+> An intelligent bot
