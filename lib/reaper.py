@@ -22,6 +22,11 @@ class Reaper:
 
 	def slack_start(self):
 		slack = Slack('xoxb-5033078835-U4Jcw2kkaebWWsuUUtyJNNaS', self.emitter)
+
+		# Register skills
+		self.emitter.register('on_message', self.interpreter.learn)
+
+		# Bootstrap
 		slack.start()
 
 	def rpi_start(self):
