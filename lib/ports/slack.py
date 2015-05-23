@@ -31,8 +31,6 @@ class Slack:
 			if "message" == data['type'] and "subtype" not in data:
 				self.emitter.emit('on_message', data)
 
-
-
 	def send(self, data):
 		channel = self._slack.server.channels.find('ai')
 		channel.send_message(data)

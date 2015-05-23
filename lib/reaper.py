@@ -6,8 +6,6 @@ from vitals import Vitals
 from util import get_time
 from time import sleep, clock
 
-from ports.slack import Slack
-
 class Reaper:
 	def __init__(self, args):
 		self.args = args
@@ -25,6 +23,8 @@ class Reaper:
 		print u'cl_start func'
 
 	def slack_start(self):
+		from ports.slack import Slack
+		
 		slack = Slack('xoxb-5033078835-U4Jcw2kkaebWWsuUUtyJNNaS', self.emitter)
 
 		# Register skills
