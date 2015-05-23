@@ -10,7 +10,7 @@ class Interpreter:
 		# Kernel setup
 		self.kernel.verbose(False)
 		self.kernel.setPredicate('secure', "yes")
-		self.kernel.learn('std-startup.xml')
+		self.kernel.learn('startup.xml')
 		self.kernel.setPredicate('secure', "no")
 		self.kernel.respond('bootstrap')
 
