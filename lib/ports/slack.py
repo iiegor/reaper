@@ -31,9 +31,11 @@ class Slack:
 			if "message" == data['type'] and "subtype" not in data:
 				self.emitter.emit('on_message', data)
 
-				# Send reply example
-				channel = self._slack.server.channels.find('ai')
-				channel.send_message('Hello!')
+
+
+	def send(self, data):
+		channel = self._slack.server.channels.find('ai')
+		channel.send_message(data)
 
 	def getInstance(self):
 		return self._slack

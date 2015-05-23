@@ -3,7 +3,7 @@ from util import read_file, write_file
 
 class Conscience:
 	def __init__(self):
-		print u'Loading the conscience...'
+		print u'Restoring the conscience...'
 
 		self.cache = {}
 		self.saving = False
