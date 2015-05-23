@@ -9,8 +9,10 @@ class Interpreter:
 
 		# Kernel setup
 		self.kernel.verbose(False)
+		self.kernel.setPredicate('secure', "yes")
 		self.kernel.learn('std-startup.xml')
-		self.kernel.respond('load aiml b')
+		self.kernel.setPredicate('secure', "no")
+		self.kernel.respond('bootstrap')
 
 	def learn(self, data):
 		# The machine will store the responses by the user and will learn how to reply better the next time...
