@@ -1,4 +1,4 @@
-# reaper
+# reaper ![travis](https://travis-ci.org/underc0de/reaper.svg?branch=master)
 > Artificial Intelligence Development 
 
 ## Contributing
