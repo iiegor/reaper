@@ -1,5 +1,5 @@
 # reaper ![travis](https://travis-ci.org/underc0de/reaper.svg?branch=master)
-> Artificial Intelligence Development 
+> A pyhton bot
 
 ## Contributing
 
